@@ -115,6 +115,8 @@ const nextConfig = {
         locales: locales
       },
   images: {
+    // 添加这一行来修复 Cloudflare 部署问题
+    unoptimized: true,
     // 图片压缩和格式优化
     formats: ['image/avif', 'image/webp'],
     // 图片尺寸优化
